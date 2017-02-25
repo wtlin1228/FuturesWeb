@@ -24,4 +24,9 @@ class FuturesWeb < Sinatra::Base
   after do
     content_type 'text/html'
   end
+
+  def self.api_ver_url
+    [config.API_SERVER, config.API_VER].join('/')
+  end
+    
 end

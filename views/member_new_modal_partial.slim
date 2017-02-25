@@ -1,0 +1,77 @@
+div id="newMemberModal" class="modal fade" role="dialog"
+  div class="modal-dialog"
+    div class="modal-content"
+      div class="modal-header"
+        h4 New Member
+      div class="modal-body"
+        form role="form" action="/member" method='post' id='new-member-form'
+          div class="form-member"
+            label for='member_name_input' Name:
+            input{ 
+              type='text' name='Member_name'
+              id='member_name_input' class="form-control"
+              placeholder="e.g.: Leo"
+            }
+            label for='member_phone_input' Phone:
+            input{ 
+              type='text' name='Member_phone'
+              id='member_phone_input' class="form-control"
+              placeholder="e.g.: 0988123456"
+            }
+            label for='member_email_input' Email:
+            input{ 
+              type='text' name='Member_email'
+              id='member_email_input' class="form-control"
+              placeholder="e.g.: leo_is_so_leo@gmail.com"
+            }
+            label for='member_location_input' Location:
+            input{ 
+              type='text' name='Member_location'
+              id='member_location_input' class="form-control"
+              placeholder="e.g.: Hsinchu"
+            }
+            label for='member_work_input' Work:
+            input{ 
+              type='text' name='Member_work'
+              id='member_work_input' class="form-control"
+              placeholder="e.g.: ITO"
+            }
+            label for='member_money_input' Money:
+            input{ 
+              type='text' name='Member_money'
+              id='member_money_input' class="form-control"
+              placeholder="e.g.: 1000000"
+            }
+            label for='member_current_level_input' Current Level:
+            input{ 
+              type='text' name='Member_current_level'
+              id='member_current_level_input' class="form-control"
+              placeholder="e.g.: 0"
+            }
+            label for='member_expect_level_input' Expect Level:
+            input{ 
+              type='text' name='Member_expect_level'
+              id='member_expect_level_input' class="form-control"
+              placeholder="e.g.: 10"
+            }
+            label for='member_time_join_input' Time Join:
+            input{ 
+              type='text' name='Member_time_join'
+              id='member_time_join_input' class="form-control"
+              placeholder="e.g.: 20170101"
+            }
+            label for='member_time_operate_input' Time Operate:
+            input{ 
+              type='text' name='Member_time_operate'
+              id='member_time_operate_input' class="form-control"
+              placeholder="e.g.: 1y"
+            }
+            
+          button{ 
+            type='submit' id='member-form-submit' class='submit' 
+            value='submit' class="btn btn-success" 
+          } Create
+          
+          button{ 
+            type="button" class="btn btn-default" data-dismiss="modal" 
+          } Cancel
